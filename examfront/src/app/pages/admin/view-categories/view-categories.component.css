@@ -1,0 +1,9 @@
+.category-container {
+    display: flex;
+    align-items: center;
+  }
+  .divider {
+    border-top: 1px solid #ccc; /* Adjust the style and color as needed */
+    margin: 10px 0; /* Adjust the margin as needed to control the spacing */
+  }
+  

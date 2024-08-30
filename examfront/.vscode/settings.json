@@ -1,0 +1,7 @@
+{
+    "java.signatureHelp.description.enabled": false,
+    "debug.javascript.autoAttachFilter": "disabled",
+    "debug.javascript.codelens.npmScripts": "top",
+    "debug.javascript.breakOnConditionalError": false,
+    "debug.javascript.unmapMissingSources": false
+}
