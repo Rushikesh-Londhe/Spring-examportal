@@ -1,0 +1,84 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top :20px">
+            <div class="col-md-6 offset-md-3">
+                <mat-card>
+                <div class="container text-center">
+                    <img src="../../../assets/register.png" alt="" width="100" height="100">
+                </div>
+                <h1 class="text-center">Register Here</h1>
+                <!-- {{user|json}} -->
+                <form (ngSubmit)="formSubmit()">
+                    <!-- username -->
+                    <mat-form-field class="full-width" appearance="fill">
+                        <mat-label>User Name</mat-label>
+                        <input required
+                        [(ngModel)]="user.username"
+                        name="username"
+                        matInput placeholder="Enter Here">
+                        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                         <mat-hint>User name must be unique!!</mat-hint> 
+                    </mat-form-field>
+
+                    <!-- password -->
+                    <mat-form-field class="full-width" appearance="fill">
+                        <mat-label>User Password</mat-label>
+                        <input required
+                        [(ngModel)]="user.password"
+                        name="password"
+                        type="password" matInput placeholder="Enter Here">
+                        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+
+                     <!-- first name -->
+                     <mat-form-field class="full-width" appearance="fill">
+                        <mat-label>Fisrt Name</mat-label>
+                        <input required [(ngModel)]="user.firstName"
+                        name="firstName"
+                        matInput placeholder="Enter Here">
+                        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+
+                         <!-- last name -->
+                     <mat-form-field class="full-width" appearance="fill">
+                        <mat-label>Last Name</mat-label>
+                        <input required [(ngModel)]="user.lastName"
+                        name="lastName"
+                         matInput placeholder="Enter Here">
+                        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+
+                         <!-- email -->
+                     <mat-form-field class="full-width" appearance="fill">
+                        <mat-label>User Email</mat-label>
+                        <input  required [(ngModel)]="user.email"
+                        name="email"
+                         type="email" matInput placeholder="Enter Here">
+                        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+
+                         <!-- phone -->
+                     <mat-form-field class="full-width" appearance="fill">
+                        <mat-label>User Phone</mat-label>
+                        <input required  [(ngModel)]="user.phone"
+                        name="phone"
+                        type="number" matInput placeholder="Enter Here">
+                        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+
+                        <div class="container text-center">
+                            <button class="mb10" type="submit" mat-raised-button color="primary">Register</button>
+                            <button class="mb10" type="reset" style="margin-left: 20px" mat-raised-button color="accent">Clear</button>
+                        </div>
+                </form>
+            </mat-card>
+            </div>
+        </div>
+
+    </div>
+</div>
